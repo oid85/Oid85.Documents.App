@@ -1,6 +1,6 @@
 ﻿import {sendPostRequest} from './api'
 
-const controller = 'categories'
+const controller = 'document-categories'
 
 export const getDocumentCategoryListFromApi = async () => {
     return sendPostRequest(`${controller}/list`, {})
