@@ -1,8 +1,8 @@
 import { combineReducers } from 'redux'
 import { appReducer } from './appReducer'
-import { documentReducer } from './documentReducer'
+import { documentCategoryReducer } from './documentCategoryReducer'
 
 export const rootReducer = combineReducers({
     app: appReducer,
-	document: documentReducer
+	documentCategory: documentCategoryReducer
 })

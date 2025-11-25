@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import 'react-tabs/style/react-tabs.css'
 import { Alert } from '../Alert/Alert'
-import {DocumentList} from "../DocumentList/DocumentList"
+import {DocumentCategoryList} from "../DocumentCategoryList/DocumentCategoryList"
 import './styles.css'
 
 export const MainScreen = () => {
@@ -13,7 +13,7 @@ export const MainScreen = () => {
             {alert && <Alert text={alert} />}
             <div>
                 <div className='horizontal-container'>
-                    <DocumentList />
+                    <DocumentCategoryList />
                 </div>
             </div>            
         </React.Fragment>

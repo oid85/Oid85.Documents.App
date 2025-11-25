@@ -7,7 +7,7 @@ import createSagaMiddleware from 'redux-saga'
 import App from './App'
 import reportWebVitals from './reportWebVitals'
 import { rootReducer } from './redux/reducers/rootReducer'
-import { sagaWatcherDocument } from './redux/sagas/sagaWatcherDocument'
+import { sagaWatcherDocumentCategory } from './redux/sagas/sagaWatcherDocumentCategory'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 const saga = createSagaMiddleware()
@@ -17,7 +17,7 @@ const composedEnhancers = compose(middlewareEnhancer)
 
 const store = createStore(rootReducer, undefined, composedEnhancers)
 
-saga.run(sagaWatcherDocument)
+saga.run(sagaWatcherDocumentCategory)
 
 const root = ReactDOM.createRoot(document.getElementById('root'))
 
